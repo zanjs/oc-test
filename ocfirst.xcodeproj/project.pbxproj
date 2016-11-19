@@ -11,6 +11,7 @@
 		8D67B3031DDFEA6E0049A3DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D67B3021DDFEA6E0049A3DD /* AppDelegate.m */; };
 		8D67B30B1DDFEA6E0049A3DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D67B30A1DDFEA6E0049A3DD /* Assets.xcassets */; };
 		8D67B30E1DDFEA6E0049A3DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D67B30C1DDFEA6E0049A3DD /* LaunchScreen.storyboard */; };
+		8D67B3171DE000080049A3DD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D67B3161DE000080049A3DD /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		8D67B30A1DDFEA6E0049A3DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D67B30D1DDFEA6E0049A3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D67B30F1DDFEA6E0049A3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D67B3151DE000080049A3DD /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8D67B3161DE000080049A3DD /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,8 @@
 			children = (
 				8D67B3011DDFEA6E0049A3DD /* AppDelegate.h */,
 				8D67B3021DDFEA6E0049A3DD /* AppDelegate.m */,
+				8D67B3151DE000080049A3DD /* MainViewController.h */,
+				8D67B3161DE000080049A3DD /* MainViewController.m */,
 				8D67B30A1DDFEA6E0049A3DD /* Assets.xcassets */,
 				8D67B30C1DDFEA6E0049A3DD /* LaunchScreen.storyboard */,
 				8D67B30F1DDFEA6E0049A3DD /* Info.plist */,
@@ -143,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D67B3031DDFEA6E0049A3DD /* AppDelegate.m in Sources */,
+				8D67B3171DE000080049A3DD /* MainViewController.m in Sources */,
 				8D67B3001DDFEA6E0049A3DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

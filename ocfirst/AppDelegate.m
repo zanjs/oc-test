@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,21 +21,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     [self.window makeKeyAndVisible];
-    [self.window setRootViewController:[[UIViewController alloc] init]];
+    [self.window setRootViewController:[[MainViewController alloc] init]];
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [view setBackgroundColor:[UIColor orangeColor]];
-    [self.window addSubview:view];
-    
-    UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake(10, 20, 300, 100)];
-    [view1 setBackgroundColor:[UIColor purpleColor]];
-    
-    UIView *view2 = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 20, 30)];
-    [view2 setBackgroundColor:[UIColor lightGrayColor]];
-    [view2 setAlpha:0.6];
-    [view1 addSubview:view2];
-    
-    [self.window addSubview:view1];
     return YES;
 }
 
