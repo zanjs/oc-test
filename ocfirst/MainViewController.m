@@ -88,6 +88,15 @@
     [attriButeString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(1, 2)];
     
     label.attributedText = [attriButeString copy];
+    
+    //frame or bouns
+    UIView *BounsView = [[UIView alloc] initWithFrame:CGRectMake(30, 30, 100, 100)];
+    [BounsView setBackgroundColor:[UIColor blackColor]];
+    [self.view addSubview:BounsView];
+    
+    UIView *BounsView1 = [[UIView alloc] initWithFrame:BounsView.bounds];
+    [BounsView1 setBackgroundColor:[UIColor redColor]];
+    [BounsView addSubview:BounsView1];
     // Do any additional setup after loading the view.
 }
 
