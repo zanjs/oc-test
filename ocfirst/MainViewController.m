@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"controller load");
-    [self.view setBackgroundColor:[UIColor cyanColor]];
-    
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+#if 0
     UIView *cview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 600, 600)];
     [cview setBackgroundColor:[UIColor orangeColor]];
     [self.view addSubview:cview];
@@ -68,7 +68,26 @@
     CGRect frame = label.frame;
     frame.size = textSize;
     label.frame = frame;
+
+#endif
     
+    NSString *aStr = @"IOS";
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 399, 400)];
+    [self.view addSubview:label];
+    
+    label.text = aStr;
+    label.textAlignment = NSTextAlignmentCenter;
+    // 风格化设定
+    NSLog(@"%@",label.attributedText);
+    
+    NSMutableAttributedString *attriButeString = [[NSMutableAttributedString alloc] initWithString:aStr];
+    
+    [attriButeString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:80] range:NSMakeRange(0, 1)];
+    [attriButeString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:70] range:NSMakeRange(1, 1)];
+    [attriButeString addAttribute:NSBackgroundColorAttributeName value:[UIColor blueColor] range:NSMakeRange(1, 2)];
+    [attriButeString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(1, 2)];
+    
+    label.attributedText = [attriButeString copy];
     // Do any additional setup after loading the view.
 }
 
