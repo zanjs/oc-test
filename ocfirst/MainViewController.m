@@ -42,7 +42,33 @@
     [cview insertSubview:view1 atIndex:cview.subviews.count -1];
     
     [self.view addSubview:view1];
-
+    
+    //label les
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(30, 299, 200, 300)];
+    [self.view addSubview:label];
+    
+    label.text = @"my name is label";
+    label.backgroundColor = [UIColor blackColor];
+    label.textColor = [UIColor whiteColor];
+    label.font = [UIFont systemFontOfSize:30];
+    
+    NSArray *fontlist = [UIFont familyNames];
+    NSLog(@"list: %@",fontlist);
+    
+    label.font = [UIFont fontWithName:@"Symbol" size:18];
+    
+    NSString *txt = @"akshkjashdjkashdjkashkddddddddddddddddddddddlfjsldkfjlskdfjklsdjflksdjflsdjlfksjdklf";
+    
+    label.text = txt;
+    label.numberOfLines = 0;
+    //获取文本大小
+    CGSize maxSize = CGSizeMake(CGRectGetWidth(label.frame), CGFLOAT_MAX);
+    CGSize textSize = [label.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont fontWithName:@"Symbol" size:18]} context:nil].size;
+    
+    CGRect frame = label.frame;
+    frame.size = textSize;
+    label.frame = frame;
+    
     // Do any additional setup after loading the view.
 }
 
